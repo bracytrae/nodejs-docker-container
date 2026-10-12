@@ -114,7 +114,7 @@ After starting the container, open the following URLs:
 
 #### Reflection Question 
 
-How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized? 
+*How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized?*
 
 Docker containers and virtual machines both allow applications to run in isolated environments, but they function differently. Virtual machines create separate computer environments within a physical computer, where each virtual machine runs its own operating system. Docker containers do not require their own complete operating systems because they share an operating system kernel. This makes containers generally faster to start, more lightweight, and less resource-intensive than virtual machines.
 

@@ -92,3 +92,30 @@ docker-assignment/
 ```
 
 Good luck with your Docker containerization!
+
+### Starting the Application
+
+Building the Docker "image":
+
+```bash
+docker build -t nodejs-docker-container .
+```
+
+Running the Docker "container":
+
+```bash
+docker run -d -p 3000:3000 nodejs-docker-container
+```
+
+After starting the container, open the following URLs:
+
+- Application: http://localhost:3000
+- API Status: http://localhost:3000/api/status
+
+#### Reflection Question 
+
+How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized? 
+
+Docker containers and virtual machines both allow applications to run in isolated environments, but they function differently. Virtual machines create separate computer environments within a physical computer, where each virtual machine runs its own operating system. Docker containers do not require their own complete operating systems because they share an operating system kernel. This makes containers generally faster to start, more lightweight, and less resource-intensive than virtual machines.
+
+Development teams might choose Docker containers over virtual machines because of their faster startup times, lower resource consumption, and ability to maintain consistency across different environments. These advantages are important in software development because they allow teams to deploy applications more efficiently while reducing compatibility issues. For example, Docker packages applications with their required dependencies, helping ensure that the application behaves consistently across different computers and deployment environments. This consistency has been known to improve application reliability by reducing errors caused by differences in software configurations, something that I thought was important to add.
